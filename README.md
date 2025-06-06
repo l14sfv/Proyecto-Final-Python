@@ -1,22 +1,31 @@
-# Sistema de Gestión de Tienda
+# Sistema de Gestión de Tienda de Calzado
 
-Este es un sistema de gestión de tienda desarrollado en Python que permite manejar productos, ventas y nómina de empleados utilizando estructuras de datos en memoria.
+Este proyecto implementa un sistema de gestión para una tienda de calzado con dos interfaces diferentes:
+
+1. **Interfaz de Consola**: Una versión basada en texto que se ejecuta en la terminal.
+2. **Interfaz Gráfica**: Una versión moderna con interfaz gráfica usando CustomTkinter.
 
 ## Características
 
-- Gestión de productos (inventario)
-- Sistema de ventas
-- Gestión de nómina de empleados
-- Almacenamiento en memoria usando estructuras de datos de Python
+- Gestión de productos (agregar, listar, control de stock)
+- Proceso de ventas
+- Gestión de empleados
+- Sistema de comisiones
+- Reportes de ventas y stock
+- Categorización de calzado
 
 ## Requisitos
 
-- Python 3.6 o superior
-- Dependencias de Python (ver requirements.txt)
+- Python 3.8 o superior
+- Dependencias listadas en `requirements.txt`
 
 ## Instalación
 
-1. Clonar o descargar el repositorio
+1. Clonar el repositorio:
+```bash
+git clone [URL_DEL_REPOSITORIO]
+```
+
 2. Instalar las dependencias:
 ```bash
 pip install -r requirements.txt
@@ -24,42 +33,48 @@ pip install -r requirements.txt
 
 ## Uso
 
-1. Ejecutar el programa:
+### Versión de Consola
+Para ejecutar la versión de consola:
 ```bash
-python sistema_tienda.py
+python Tienda_Calzado_Consola.py
 ```
 
-2. Seguir las instrucciones del menú principal:
-   - Gestión de Productos
-   - Gestión de Ventas
-   - Gestión de Nómina
-   - Ver Historial de Ventas
+### Versión con Interfaz Gráfica
+Para ejecutar la versión con interfaz gráfica:
+```bash
+python Interfaz.py
+```
 
 ## Estructura del Proyecto
 
-- `sistema_tienda.py`: Archivo principal del sistema
-- `requirements.txt`: Dependencias del proyecto
+- `Tienda_Calzado_Consola.py`: Implementación de la interfaz de consola
+- `Interfaz.py`: Implementación de la interfaz gráfica con CustomTkinter
+- `requirements.txt`: Lista de dependencias del proyecto
+- `README.md`: Documentación del proyecto
 
-## Funcionalidades
+## Características de la Interfaz Gráfica
 
-### Gestión de Productos
-- Agregar nuevos productos
-- Ver inventario actual
-- Control de stock
+- Diseño moderno con tema oscuro/claro
+- Sistema de pestañas para mejor organización
+- Formularios intuitivos
+- Mensajes de retroalimentación
+- Visualización de datos en tiempo real
 
-### Gestión de Ventas
-- Realizar ventas
-- Ver inventario antes de vender
-- Registro automático de ventas
-- Historial de ventas
+## Características de la Interfaz de Consola
 
-### Gestión de Nómina
-- Agregar empleados
-- Ver lista de empleados
-- Control de salarios
+- Menú interactivo
+- Validación de datos
+- Reportes formateados
+- Fácil de usar en terminal
 
-## Estructuras de Datos Utilizadas
+## Contribución
 
-- Listas para almacenar productos, empleados y ventas
-- Clases para modelar entidades (Producto, Empleado, Venta, DetalleVenta)
-- Manejo de fechas y horas para el registro de ventas 
+1. Fork el proyecto
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles. 
