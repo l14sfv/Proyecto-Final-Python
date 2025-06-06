@@ -184,9 +184,9 @@ class TiendaCustomTkinter:
         
         # Botones para diferentes reportes
         ctk.CTkButton(report_frame, text="Ver Historial de Ventas", 
-                     command=self.mostrar_historial_ventas).pack(pady=10)
+                    command=self.mostrar_historial_ventas).pack(pady=10)
         ctk.CTkButton(report_frame, text="Ver Productos con Bajo Stock", 
-                     command=self.mostrar_bajo_stock).pack(pady=10)
+                    command=self.mostrar_bajo_stock).pack(pady=10)
         
         # Área de visualización de reportes
         self.area_reportes = ctk.CTkTextbox(report_frame, height=300)
