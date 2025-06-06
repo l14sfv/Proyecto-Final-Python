@@ -10,7 +10,7 @@ class TiendaCustomTkinter:
         
         # Configuración de la ventana principal
         self.root = ctk.CTk()
-        self.root.title("Tienda de Calzado Luna")
+        self.root.title("Tienda de Calzado")
         self.root.geometry("1000x600")
         
         # Rangos de comisión
